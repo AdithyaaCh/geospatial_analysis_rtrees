@@ -39,23 +39,23 @@ Upon running the program, you will be presented with a series of interactive opt
 
 # Menu Options
 
-    1.  Perform a Range Query (Option A):
-    •   Retrieves environmental data (humidity, pollution level, temperature) within a user-defined rectangular region.
-    •   Example: Enter A, then provide coordinates like 0 0 500 500 to query data within this rectangle.
-    2.  Detect Fire in a Specified Area (Option B):
-    •   Monitors temperature and humidity in a specified circular area centered at a given point, simulating fire spread detection.
+1.  Perform a Range Query (Option A):
+    - Retrieves environmental data (humidity, pollution level, temperature) within a user-defined rectangular region.
+    -   Example: Enter A, then provide coordinates like 0 0 500 500 to query data within this rectangle.
+2.  Detect Fire in a Specified Area (Option B):
+    -   Monitors temperature and humidity in a specified circular area centered at a given point, simulating fire spread detection.
     Important Note - The synthetic data is a representation of a real life fire spread scenario which starts at 500, 500 and spreads radially over time.
-    •   Example: Enter B, then specify a center point (x, y) and a radius to define the detection area. The program will search for any high-temperature readings within this area and display the results. This also triggers a visualization in gnuplot.
-    3.  Update R-tree (Insert/Delete Sensor) (Option C):
-    •   Add or delete a sensor in the tree.
-    •   Insert: Enter C, then I. Provide coordinates (x, y) and values for humidity, pollution level, and temperature.
-    •   Delete: Enter C, then D. Specify coordinates (x, y) of the sensor you wish to remove.
-    4.  Load Next Dataset File (Option N):
-    •   Loads the next dataset file from the sensors folder (e.g., sensors_2.txt, sensors_3.txt).
-    •   This feature allows time-based updates for real-time monitoring.
-    •   Example: After loading sensors_1.txt, entering N will load sensors_2.txt, updating the tree with new sensor data.
-    5.  Quit Program (Option Q):
-    •   Exits the application.
+    -   Example: Enter B, then specify a center point (x, y) and a radius to define the detection area. The program will search for any high-temperature readings within this area and display the results. This also triggers a visualization in gnuplot.
+3.  Update R-tree (Insert/Delete Sensor) (Option C):
+    -   Add or delete a sensor in the tree.
+    -   Insert: Enter C, then I. Provide coordinates (x, y) and values for humidity, pollution level, and temperature.
+    -   Delete: Enter C, then D. Specify coordinates (x, y) of the sensor you wish to remove.
+4.  Load Next Dataset File (Option N):
+    -   Loads the next dataset file from the sensors folder (e.g., sensors_2.txt, sensors_3.txt).
+    -   This feature allows time-based updates for real-time monitoring.
+    -   Example: After loading sensors_1.txt, entering N will load sensors_2.txt, updating the tree with new sensor data.
+5.  Quit Program (Option Q):
+    - Exits the application.
 
 Important Note- The sensors_x files are just used to show that the program can handle multiple datasets. For convenience, when we insert or delete a sensor, changes will not be reflected in the next dataset file as they serve a different purpose. The program is designed to handle real-time monitoring and updates, not historical data changes.
 
