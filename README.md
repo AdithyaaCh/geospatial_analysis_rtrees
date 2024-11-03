@@ -37,7 +37,7 @@ gcc main.c -o rtree -lm
 
 Upon running the program, you will be presented with a series of interactive options to perform operations such as range queries, fire detection, and data updates. Below is a detailed guide on each option.
 
-# Menu Options
+## Menu Options
 
 1.  Perform a Range Query (Option A):
     - Retrieves environmental data (humidity, pollution level, temperature) within a user-defined rectangular region.
@@ -59,29 +59,29 @@ Upon running the program, you will be presented with a series of interactive opt
 
 Important Note- The sensors_x files are just used to show that the program can handle multiple datasets. For convenience, when we insert or delete a sensor, changes will not be reflected in the next dataset file as they serve a different purpose. The program is designed to handle real-time monitoring and updates, not historical data changes.
 
-# Data Format for Sensor Files
+## Data Format for Sensor Files
 
 Each dataset file in the sensors folder (e.g., sensors_1.txt) should follow this format:
 - x y humidity pollution_level temperature
 
 
-# Runthrough
+## Runthrough
 
-    1.  Run the Program:
-    •   Compile and execute as described above.
-    •   The program will automatically load sensors_1.txt from the sensors folder.
-    2.  Perform a Range Query:
-    •   Select option A for a range query.
-    •   Input 0 0 500 500 to retrieve sensor data within this bounding box.
-    3.  Detect Fire:
-    •   Select option B to detect potential fire spread.
-    •   Enter center coordinates 500 500 and radius 200. The program will show sensors in this area, and it will generate a heatmap plot.
-    4.  Insert a New Sensor:
-    •   Select option C and choose I to insert a sensor.
-    •   Enter coordinates 150 150 and values humidity=55, pollution_level=65, temperature=85.
-    •   The program will update the tree with this new sensor data.
-    5.  Load Next Dataset:
-    •   Select option N to load sensors_2.txt, updating the R-tree with the next dataset.
+1.  Run the Program:
+    -   Compile and execute as described above.
+    -   The program will automatically load sensors_1.txt from the sensors folder.
+2.  Perform a Range Query:
+    -   Select option A for a range query.
+    -   Input 0 0 500 500 to retrieve sensor data within this bounding box.
+3.  Detect Fire:
+    -   Select option B to detect potential fire spread.
+    -   Enter center coordinates 500 500 and radius 200. The program will show sensors in this area, and it will generate a heatmap plot.
+4.  Insert a New Sensor:
+    -   Select option C and choose I to insert a sensor.
+    -   Enter coordinates 150 150 and values humidity=55, pollution_level=65, temperature=85.
+    -   The program will update the tree with this new sensor data.
+5.  Load Next Dataset:
+    -   Select option N to load sensors_2.txt, updating the R-tree with the next dataset.
 
 
 
