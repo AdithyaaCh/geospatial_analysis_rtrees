@@ -26,7 +26,7 @@ brew install gnuplot
 ## Compilation and Execution
 1. **Compile the code:**
 ```bash
-gcc main.c -o rtree -lm
+gcc main.c -o rtree 
 ```
 2. **Run the program:**
 ```bash
